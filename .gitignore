@@ -1,2 +1,7 @@
 *.zip
-input/*
+*.csv
+*.log
+/input
+/.vscode
+*.pth
+/logs

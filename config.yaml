@@ -1,0 +1,19 @@
+# 训练配置
+run_params:
+  gpu_id: 0
+  train_csv: 'input/training/training.csv'
+  test_csv: 'input/test/test.csv'
+  lookup_table_csv: 'input/IdLookupTable.csv'
+
+# 模型超参数
+model_params:
+  backbone_name: 'resnet34' #efficientnet_b0/1,resnet18/34
+  learning_rate: 0.0005
+  epochs: 200
+  batch_size: 256
+  dropout: 0
+
+# 早停机制
+early_stopping:
+  patience: 30
+  min_delta: 0.000001
